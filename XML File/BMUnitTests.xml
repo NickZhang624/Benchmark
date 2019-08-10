@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BMUnitTests</name>
+    </assembly>
+    <members>
+        <member name="T:BMUnitTests.MyClassUnitTest">
+            <summary>
+            //This is index for different class testing
+            </summary>
+            <remarks>
+            for public class MyClass
+            </remarks>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassPlanetId">
+            <summary>
+            This is test method for string PlanetId
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassTypeId">
+            <summary>
+            This is test method for int TypeId
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassTypeName">
+            <summary>
+            This is test method for string TypeName
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassXPosition">
+            <summary>
+            This is test method for int XPosition
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassYPosition">
+            <summary>
+            This is test method for int YPosition
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassWidth">
+            <summary>
+            This is test method for int Width
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassHeight">
+            <summary>
+            This is test method for int Height
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassXStep">
+            <summary>
+            This is test method for int XStep
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassYStep">
+            <summary>
+            This is test method for int YStep
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassPlanetPic">
+            <summary>
+            This is test method for picture PlanetPic
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassDrawPic">
+            <summary>
+            This is test method for class member drawpic
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassMove">
+            <summary>
+            This is test method for class member move
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassToString">
+            <summary>
+            This is test method for class member tostring
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.MyClassUnitTest.TestMyClassConstructor">
+            <summary>
+            This is test method for class constructor
+            </summary>
+        </member>
+        <member name="T:BMUnitTests.FilterUnitTest">
+            <summary>
+            //This is index for different class testing
+            </summary>
+            <remarks>
+            for public class Filter
+            </remarks>
+        </member>
+        <member name="M:BMUnitTests.FilterUnitTest.TestFilterSortAZ">
+            <summary>
+            This is test method for sortAZ
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.FilterUnitTest.TestFilterSortZA">
+            <summary>
+            This is test method for sortZA
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.FilterUnitTest.TestFilterSearch">
+            <summary>
+            This is test method for Search
+            </summary>
+        </member>
+        <member name="T:BMUnitTests.FileManagerUnitTest">
+            <summary>
+            //This is index for different class testing
+            </summary>
+            <remarks>
+            for public class FileManager
+            </remarks>
+        </member>
+        <member name="M:BMUnitTests.FileManagerUnitTest.TestFileManagerLoadPlanets">
+            <summary>
+            This is test method for filemanager load planets
+            </summary>
+        </member>
+        <member name="M:BMUnitTests.FileManagerUnitTest.TestFileManagerSavePlanets">
+            <summary>
+            This is test method for filemanager save planets
+            </summary>
+        </member>
+    </members>
+</doc>

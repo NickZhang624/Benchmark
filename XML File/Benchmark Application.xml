@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Benchmark Application</name>
+    </assembly>
+    <members>
+        <member name="T:Benchmark_Application.FileManager">
+            <summary>
+            This is class <c>Filemanager</c> to write and read file
+            <list type="bullet">
+            <item>
+            <term>LoadPlanets</term>
+            <description>loading file</description>
+            </item>
+            <item>
+            <term>SavePlanet</term>
+            <description>save date to file</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            This class can write and read file
+            </remarks>
+        </member>
+        <member name="M:Benchmark_Application.FileManager.LoadPlanets(System.String)">
+            <summary>
+            this is a method to add planets file and picture
+            </summary>
+            <remarks>
+            load files and set up a string parameter
+            </remarks>
+            <param name="filename">a string to specify file</param>
+            <returns>
+            loaded files
+            </returns>
+        </member>
+        <member name="M:Benchmark_Application.FileManager.SavePlanet(System.Collections.Generic.List{Benchmark_Application.MyClass},System.String)">
+            <summary>
+            This is method called saveplanet to save data to local file
+            </summary>
+            <remarks>
+            save data to local planet by two parameters: list m and a string
+            </remarks>
+            <param name="m">a list data</param>
+            <param name="filename">a string to specify file</param>
+        </member>
+        <member name="T:Benchmark_Application.Filter">
+            <summary>
+            This is class <c>filter</c> to search and sort lists of objects
+            <list type="bullet">
+            <item>
+            <term>SortAZ</term>
+            <description>sort type name by A-Z</description>
+            </item>
+            <item>
+            <term>SortZA</term>
+            <description>sort type name by Z-A</description>
+            </item>
+            <item>
+            <term>Search</term>
+            <description>search type name</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            This class can search and sort method
+            </remarks>
+        </member>
+        <member name="M:Benchmark_Application.Filter.SortAZ(System.Collections.Generic.List{Benchmark_Application.MyClass})">
+            <summary>
+            This is method called SortAZ, and parameter sortlist
+            </summary>
+            <remarks>
+            Use Linq expression to sort
+            </remarks>
+            <param name="sortlist">a list after sorted</param>
+            <returns>
+            a sort list after Linq experssion method
+            </returns>
+            see <see cref="M:Benchmark_Application.Filter.Search(System.Collections.Generic.List{Benchmark_Application.MyClass},System.String)"/> to sort list data
+        </member>
+        <member name="M:Benchmark_Application.Filter.SortZA(System.Collections.Generic.List{Benchmark_Application.MyClass})">
+            <summary>
+            This is method called SortZA, and parameter sortlist
+            </summary>
+            <remarks>
+            use Lambda experssion to sort
+            </remarks>
+            <param name="sortlist">a list after sorted</param>
+            <returns>
+            a sort list after Lambda experssion method
+            </returns>
+        </member>
+        <member name="M:Benchmark_Application.Filter.Search(System.Collections.Generic.List{Benchmark_Application.MyClass},System.String)">
+            <summary>
+            This is method called search, and two parameters
+            </summary>
+            <remarks>
+            Use Linq expression to search
+            </remarks>
+            <param name="searchlist">a list after searched</param>
+            <param name="term">a string text</param>
+            <returns>
+            a search list after Linq experssion method
+            </returns>
+            see <see cref="M:Benchmark_Application.Filter.SortAZ(System.Collections.Generic.List{Benchmark_Application.MyClass})"/> to sort list data
+        </member>
+        <member name="T:Benchmark_Application.Form1">
+            <summary>
+            This is public partial class for form1
+            </summary>
+            <remarks>
+            This is public partial class to declare paramters for form 1
+            </remarks>
+        </member>
+        <member name="M:Benchmark_Application.Form1.#ctor">
+            <summary>
+            This is public form1
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.picScreen_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is button to load new object to form
+            </summary>
+            <remarks>
+            this button to load a moving boject and text info
+            </remarks>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnShowStatus_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to show object and text infor in the list box
+            </summary>
+            <remarks>
+            update moveing speed data to list box 
+            </remarks>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnLoadInitialData_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to load initial data
+            </summary>
+            <remarks>
+            initial data inculde text infor and picture
+            </remarks>
+        </member>
+        <member name="M:Benchmark_Application.Form1.MoveAndShowPlanets(System.Object,System.EventArgs)">
+            <summary>
+            This method for object moving and display
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            This is timer procedure
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnRemoveSelectedObj_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to remove object from form
+            </summary>
+            <remarks>
+            remove image and text infor from list box 
+            </remarks>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnClear_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to clear all objects from form
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnLoadPreviousSaving_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to load data from another text file 
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnSortZA_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to sort term Z to A by type name
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnSortAZ_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to sort term A-Z by type name
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnSearch_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to search term contains in type name
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.updatelistbox">
+            <summary>
+            This is procedure to update list box data
+            </summary>
+            <remarks>
+            procedure called by several button using
+            </remarks>
+        </member>
+        <member name="M:Benchmark_Application.Form1.btnSaveCurrentList_Click(System.Object,System.EventArgs)">
+            <summary>
+            This button to save displayed object to text file
+            </summary>
+        </member>
+        <member name="F:Benchmark_Application.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Benchmark_Application.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Benchmark_Application.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Benchmark_Application.MyClass">
+            <summary>
+            This is <c>MyClass</c> to store data and objects
+            <list type="bullet">
+            <item>
+            <term>DrawPic</term>
+            <description>picture display method</description>
+            </item>
+            <item>
+            <term>Move</term>
+            <description>simulate moving method</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            This class can set initual data, picture and simulate object moveing
+            </remarks>
+        </member>
+        <member name="F:Benchmark_Application.MyClass.planetId">
+            <summary>
+            Store for private properties
+            </summary>
+            <remarks>
+            fields include planetId, typeid, typename, Xposition, Yposition, width, height, xstep, ystep and planetpic
+            </remarks>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.PlanetId">
+            <value>gets the value of PlanetId</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.TypeId">
+            <value>gets the value of TypeId</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.TypeName">
+            <value>gets the value of TypeName</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.XPosition">
+            <value>gets the value of XPosition</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.YPosition">
+            <value>gets the value of YPosition</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.Width">
+            <value>gets the value of Width</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.Height">
+            <value>gets the value of Height</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.XSetp">
+            <value>gets the value of XSetp</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.YSetp">
+            <value>gets the value of YSetp</value>
+        </member>
+        <member name="P:Benchmark_Application.MyClass.PlanetPic">
+            <value>gets the value of PlantePic</value>
+        </member>
+        <member name="M:Benchmark_Application.MyClass.#ctor(System.String,System.Windows.Forms.PictureBox,System.Int32)">
+            <summary>
+            This is construtor would be set initial data
+            </summary>
+            <remarks>
+            constructor with three parameters: id, myclasspic and seed
+            </remarks>
+            <param name="id">a string number</param>
+            <param name="myclasspic">a picture parameter</param>
+            <param name="seed">an integer number</param>
+        </member>
+        <member name="M:Benchmark_Application.MyClass.DrawPic(System.Drawing.Graphics)">
+            <summary>
+            This is method display a picture on the background
+            </summary>
+            <param name="canvas">a canvas to specify the object location and size</param>
+        </member>
+        <member name="M:Benchmark_Application.MyClass.Move">
+            <summary>
+            This is method will simulate moving, change object position
+            </summary>
+            <remarks>
+            simulate object moveing by changing object X,Y position
+            </remarks>
+            <example>
+            <code>
+            if Xposition=590, width=400 or Xposition=-100
+            {
+              Xstep=-10(-Xstep)
+            }
+            Xposition= 590-10
+            if Yposition=590, height=400 or Yposition=-100
+            {
+              Ystep=-10(-Ystep)
+            }
+            Yposition= 590-10
+            </code>
+            </example>
+        </member>
+        <member name="M:Benchmark_Application.MyClass.ToString">
+            <summary>
+            This is override method
+            </summary>
+            <remarks>
+            enable a object can be displayed as a string
+            </remarks>
+            <returns>
+            the string message would be displayed
+            </returns>
+        </member>
+        <member name="M:Benchmark_Application.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Benchmark_Application.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Benchmark_Application.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Benchmark_Application.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
